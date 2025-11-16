@@ -1,0 +1,10 @@
+<img width="1500" height="1500" alt="eval_results_acc_keywords" src="https://github.com/user-attachments/assets/822dbae8-ecf6-47e6-9627-1c8cf0fd8325" />
+<img width="1500" height="1500" alt="eval_results_acc_pass_acc" src="https://github.com/user-attachments/assets/6a0c16e2-f2c4-4c45-9f18-b142d3352275" />
+<img width="1500" height="1500" alt="eval_results_acc_tokens" src="https://github.com/user-attachments/assets/f358bc5f-51b3-450b-86d3-56332cb1eda7" />
+<img width="1500" height="1500" alt="eval_results_avg_stop_tokens" src="https://github.com/user-attachments/assets/71691a56-5f83-4685-94c1-3ff5da31f4a4" />
+<img width="1500" height="1500" alt="eval_results_box_ratio_and_token_length" src="https://github.com/user-attachments/assets/922b9db1-309f-4fe2-b788-61dc11f8bcf9" />
+<img width="1500" height="1500" alt="eval_results_clip_ratio" src="https://github.com/user-attachments/assets/ab78b740-3dc5-4d1d-81f1-6884f56610db" />
+<img width="1500" height="1500" alt="eval_results_correct_tokens" src="https://github.com/user-attachments/assets/b38f5db5-6d06-40a2-ac02-9032afb501a4" />
+<img width="1500" height="1500" alt="eval_results_repeat_ratio_and_token_length" src="https://github.com/user-attachments/assets/3a1076e7-13fe-4b12-b392-022af48d561b" />
+<img width="1500" height="1500" alt="eval_results_tokens_keywords" src="https://github.com/user-attachments/assets/e537c8d0-5951-44fa-8042-c199d49a6e45" />
+<img width="1500" height="1500" alt="eval_results_wrong_tokens" src="https://github.com/user-attachments/assets/d65cdd2e-8539-4efb-938d-9c9204d5aaf4" />
