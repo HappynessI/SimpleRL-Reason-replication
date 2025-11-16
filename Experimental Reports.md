@@ -72,6 +72,8 @@ By strategically inserting ray.gc() at memory-intensive stages, I managed to par
 
 My suspicion is that the problem stems from an outdated vllm version, which lags significantly behind the version required by the official verl repository. Ultimately, I decided to clone the official verl repository, customize it, and run my training from there.
 
+The VERL official repository’s README explicitly states: “Please avoid vLLM 0.7.x, which contains bugs that may lead to OOMs and unexpected errors.” The requirements in this project specify vLLM <= 0.6.3, and the author clearly no longer maintains this repository. Therefore, I recommend using the official VERL repository for your experiments.
+
 ## Qwen2.5-Math-1.5B Experiment Log
 
 I had previously run experiments with Qwen2.5-1.5B-Instruct, but the results were not good, so I did not save the experimental parameters from that run. This current experiment (using Qwen2.5-Math-1.5B) is the one with the best-preserved parameters and results.
