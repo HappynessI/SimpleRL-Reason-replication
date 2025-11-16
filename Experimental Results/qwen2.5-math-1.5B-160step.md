@@ -1,0 +1,10 @@
+<img width="1500" height="1500" alt="eval_results_acc_keywords" src="https://github.com/user-attachments/assets/5d0c8b6d-e4ae-4d26-8dcd-dc5004f190f2" />
+<img width="1500" height="1500" alt="eval_results_acc_pass_acc" src="https://github.com/user-attachments/assets/1313a980-552e-4911-a502-faabe820fd6a" />
+<img width="1500" height="1500" alt="eval_results_acc_tokens" src="https://github.com/user-attachments/assets/2b34936c-cd00-440d-b364-def9f8ff28d7" />
+<img width="1500" height="1500" alt="eval_results_avg_stop_tokens" src="https://github.com/user-attachments/assets/d9e964e3-1758-45a5-b9f1-483f4d9f52a9" />
+<img width="1500" height="1500" alt="eval_results_box_ratio_and_token_length" src="https://github.com/user-attachments/assets/a350df95-abf5-4a46-9fe4-98d3b682929b" />
+<img width="1500" height="1500" alt="eval_results_clip_ratio" src="https://github.com/user-attachments/assets/e1796118-1323-45f2-8e0b-8f47f84f0d4f" />
+<img width="1500" height="1500" alt="eval_results_correct_tokens" src="https://github.com/user-attachments/assets/a62dc0a6-d43b-4737-9491-be6f10f633da" />
+<img width="1500" height="1500" alt="eval_results_repeat_ratio_and_token_length" src="https://github.com/user-attachments/assets/0fbdd68e-3561-46a4-97d5-e67e0c9409c3" />
+<img width="1500" height="1500" alt="eval_results_tokens_keywords" src="https://github.com/user-attachments/assets/02bb0a6e-caf7-4ef3-b508-dd25bf1dea51" />
+<img width="1500" height="1500" alt="eval_results_wrong_tokens" src="https://github.com/user-attachments/assets/181bf602-fd7e-41a1-acec-dcaecc219d17" />
