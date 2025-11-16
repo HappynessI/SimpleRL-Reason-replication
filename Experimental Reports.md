@@ -288,5 +288,38 @@ bash eval_math_nodes.sh \
     --gpus "6,7"
 ```
 
+## Experiment Matirces
+
+### System
+
+<img width="1456" height="919" alt="image" src="https://github.com/user-attachments/assets/f1be16b8-25d9-4dcc-a56b-065c3cc5f067" />
+
+<img width="1425" height="903" alt="image" src="https://github.com/user-attachments/assets/ba06b284-f373-405a-943c-c1abc29b3a2c" />
+
+### Actor
+
+<img width="1961" height="903" alt="image" src="https://github.com/user-attachments/assets/66008d39-7b98-4360-a747-e5a98d06da39" />
+
+
+<img width="1300" height="441" alt="image" src="https://github.com/user-attachments/assets/56a83a98-5b69-40d6-b123-203d693cb873" />
+
+
+### Critic
+
+<img width="1966" height="920" alt="image" src="https://github.com/user-attachments/assets/bfb273a9-b5dc-4151-8550-e358da58215c" />
+
+<img width="1963" height="919" alt="image" src="https://github.com/user-attachments/assets/7aabd163-016b-45ed-bf6c-8955c0c6605d" />
+
+
+### Prompt Length
+
+<img width="1965" height="923" alt="image" src="https://github.com/user-attachments/assets/f24fce99-d35a-4fa2-92a0-ad3ede4badc6" />
+
+### Response Length
+
+<img width="1969" height="921" alt="image" src="https://github.com/user-attachments/assets/5f299056-ebdd-459b-8c60-acd2a88f2647" />
+
+<img width="1303" height="442" alt="image" src="https://github.com/user-attachments/assets/74fe2ab2-7d58-4497-9db7-d814973ade5e" />
+
 ## Experiment Results
 
