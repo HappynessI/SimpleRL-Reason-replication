@@ -224,7 +224,7 @@ MICRO_ROLLOUT_BATCH_SIZE=512
 REMOVE_PREVIOUS_CKPT=False
 ```
 
-但是结合我之前在log看到的信息，我发现自己遗漏了一个关键点：
+However, combining this with the information I saw in the logs earlier, I realized I missed a key point:
 ```
 # MAX_PROMPT_LENGTH = 512
 [36m(main_task pid=2341477)[0m original dataset len: 8523
@@ -323,5 +323,45 @@ bash eval_math_nodes.sh \
 
 <img width="1303" height="442" alt="image" src="https://github.com/user-attachments/assets/74fe2ab2-7d58-4497-9db7-d814973ade5e" />
 
-## Experiment Results
+## My attempts to address the memory leak issue
 
+I implemented an adaptive memory cleanup strategy in ray_trainer.py to mitigate memory leaks. The system now performs high-frequency KV Cache cleanup (every 5 steps) immediately after resuming from a checkpoint, and stabilizes to a normal frequency (every 10 steps) thereafter.
+
+```
+                # 自适应内存清理：根据checkpoint恢复状态动态调整
+
+                # 从checkpoint恢复后的前20步，更频繁清理（每5步），之后恢复正常（每10步）
+
+                if self.resumed_from_checkpoint and (self.global_steps - self.checkpoint_resume_step) <= 20:
+
+                    cleanup_interval = 5  # 恢复后高频清理
+
+                else:
+
+                    cleanup_interval = 10  # 正常频率
+
+                if self.global_steps % cleanup_interval == 0:
+
+                    import gc
+
+                    try:
+
+                        # 清理Worker端的vLLM KV Cache
+
+                        self.actor_rollout_wg.free_kv_cache()
+
+                    except Exception as e:
+
+                        logger.warning(f"[Memory] KV Cache cleanup failed: {e}")
+
+                    # Driver端的温和清理
+
+                    if torch.cuda.is_available():
+
+                        torch.cuda.empty_cache()
+
+                    gc.collect(generation=0)
+
+                    print(f"[Memory] Step {self.global_steps}: KV Cache cleanup performed (interval={cleanup_interval})")
+```
+This modification represents my closest attempt to a successful fix. I iterated on this memory cleanup strategy both before and after this specific version, although I cannot rule out the possibility of insufficient server memory. Since subsequent optimizations also focused primarily on memory cleanup and configuration constraints, I have not included them here.
